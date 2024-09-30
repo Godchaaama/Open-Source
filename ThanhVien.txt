@@ -1,3 +1,7 @@
 
 2286400015-Huỳnh Thái Linh
+<<<<<<< HEAD
 2286400029-Ho Gia Thanh
+=======
+2286400011 - Truong Minh Khoa
+>>>>>>> d7e99f5c27a9d8a2cfaba49831760228844d9a74
