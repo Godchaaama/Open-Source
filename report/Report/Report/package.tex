@@ -1,0 +1,73 @@
+%CÁC PACKAGE ĐỂ TẠO BOX
+\usepackage{titlesec}
+\usepackage{mdframed}
+%CÁC PACKAGE ĐỂ TẠO TABLE
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\newmdenv[linecolor=black,skipabove=\topsep,skipbelow=\topsep,leftmargin=-5pt,rightmargin=-5pt,innerleftmargin=5pt,innerrightmargin=5pt]{mybox}
+\usepackage[figurename=Hình,tablename=Bảng]{caption}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[utf8]{vietnam}
+\usepackage[left=2.6cm, right=2cm, top=2cm, bottom=2.5cm]{geometry}
+\usepackage{array}
+\usepackage{appendix}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage{scrextend}
+\changefontsizes{13pt}
+%KHAI BÁO TKIZ
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{float}
+
+\newtheorem{dn}{Định nghĩa}[chapter]
+\newtheorem{dl}{Định lý}[chapter]
+\newtheorem{vd}{Ví dụ}[chapter]
+\newtheorem{chap}{Chương}
+\setlength{\parindent}{0pt}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{ref.bib}
+\renewcommand{\baselinestretch}{1.0} 
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+%% Chèn code vào trong latex
+\usepackage{minted}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\newenvironment{code}{\captionsetup{type=listing}}{}
+\SetupFloatingEnvironment{listing}{name=Source Code}
+\usepackage{listings}
+\usepackage{color} %% Tô màu cho code thêm đẹp
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1.2pt} 			
+\renewcommand{\footrulewidth}{1.2pt}  
+
+\cfoot{\thepage}

@@ -1,0 +1,54 @@
+\documentclass[13pt,a4paper]{report}
+\input{package}
+\begin{document}
+\input{Trangbia/trang1}
+% Trang bìa 2 
+\input{Trangbia/trang2}
+\newpage
+\vspace*{2.5cm}
+\input{firstpage/nhanxet}
+\newpage
+\vspace*{2.5cm}
+\input{firstpage/loicamdoan}
+\newpage
+\vspace*{2.5cm}
+\input{firstpage/danhmuc}
+\tableofcontents %mục lục
+\listoftables %bảng
+\listoffigures %hình
+
+\chapter{TỔNG QUAN} 
+    \input{Chuong1/gioithieudetai}
+    \input{Chuong1/nhiemvudoan}
+    \input{Chuong1/muctieu}
+    \input{Chuong1/doituong}
+    \input{Chuong1/ppnghiencuu}
+    \input{Chuong1/nhungdonggop}
+    \input{Chuong1/cautruc}
+
+\chapter{CƠ SỞ LÝ THUYẾT}
+    \input{Chuong2/web scraping}
+    \input{Chuong2/selenium}
+    \newpage
+    \input{Chuong2/NoSQL}
+    \input{Chuong2/mongoDB}
+    
+\chapter{PHƯƠNG PHÁP THỰC NGHIỆM}
+    \input{Chuong3/PPTN}
+    
+\chapter{KẾT QUẢ THỰC NGHIỆM}
+    \input{Chuong4/KQTN}
+    
+\chapter{KẾT LUẬN VÀ KIẾN NGHỊ}
+    \input{Chuong5/KL&KN}
+    
+\newpage
+%Tài liệu tham khảo
+\printbibliography[heading=bibintoc,title={\textcolor{blue}{Tài liệu tham khảo}}]
+
+\appendix
+\chapter*{PHỤ LỤC}
+\addcontentsline{toc}{chapter}{PHỤ LỤC}
+\input{phuluc}
+
+\end{document}

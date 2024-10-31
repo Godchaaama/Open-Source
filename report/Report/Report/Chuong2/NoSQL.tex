@@ -1,0 +1,60 @@
+\section{NOSQL}
+\subsection{Giới thiệu cơ sở dữ liệu NoSQL}
+\begin{enumerate}
+    \item [] \hspace*{0.7cm}NoSQL là một loại hệ thống quản lý cơ sở dữ liệu (DBMS)\footnote{DBMS (Database Management System) - Hệ thống Quản lý Cơ sở Dữ liệu.} được thiết kế để xử lý và lưu trữ khối lượng lớn dữ liệu phi cấu trúc và bán cấu trúc. Không giống như các cơ sở dữ liệu quan hệ truyền thống sử dụng các bảng có lược đồ được xác định trước để lưu trữ dữ liệu, cơ sở dữ liệu NoSQL sử dụng các mô hình dữ liệu linh hoạt có thể thích ứng với các thay đổi trong cấu trúc dữ liệu và có khả năng mở rộng theo chiều ngang để xử lý lượng dữ liệu ngày càng tăng.\cite{noauthor_introduction_2018}
+
+\end{enumerate}
+
+\subsection{Phân loại cơ sở dữ liệu NoSQL}
+\begin{enumerate}
+    \item []
+    \begin{itemize}[left=0.2cm]
+    \item[-]\textbf{Cơ sở dữ liệu \\document:} Lưu trữ dữ liệu dưới dạng tài liệu (document), thường ở định dạng JSON hoặc BSON. Ví dụ: MongoDB, Couchbase.
+
+    \item[-]\textbf{Cơ sở dữ liệu key-value:} Lưu trữ dữ liệu dưới dạng cặp khóa-giá trị (key-value pairs). Ví dụ: Redis, DynamoDB.
+    
+    \item[-]\textbf{Cơ sở dữ liệu column-family:} Lưu trữ dữ liệu theo các cột (columns) thay vì hàng, phù hợp với dữ liệu lớn. Ví dụ: Cassandra, HBase.
+    
+    \item[-]\textbf{Cơ sở dữ liệu graph:} Lưu trữ và quản lý dữ liệu dưới dạng đồ thị (graph), với các nút (nodes) và cạnh (edges) để biểu diễn mối quan hệ. Ví dụ: Neo4j, ArangoDB.
+    \end{itemize}
+    
+
+\end{enumerate}
+
+\subsection{Ưu điểm và nhược điểm}
+\begin{enumerate}
+    \item [] \textbf{Ưu điểm:}
+    \begin{itemize}[left=0.2cm]
+    \item[-]\textbf{Khả năng mở rộng:} NoSQL hỗ trợ mở rộng theo chiều ngang, giúp thêm nhiều máy chủ khi cần, thích hợp với dữ liệu lớn và khối lượng công việc tăng trưởng.
+    
+    \item[-]\textbf{Linh hoạt về cấu trúc:} Hỗ trợ dữ liệu có cấu trúc, bán cấu trúc và không cấu trúc, thích hợp cho các ứng dụng không có cấu trúc dữ liệu cố định.
+    
+    \item[-]\textbf{Hiệu suất cao trong truy vấn:} Được thiết kế để xử lý khối lượng lớn dữ liệu nhanh chóng.
+    
+    \item[-]\textbf{Chi phí thấp:} Không yêu cầu hạ tầng phần cứng đắt tiền và có thể chạy trên các cụm phần cứng giá rẻ.
+    \end{itemize}
+    \newpage
+    \item [] \textbf{Nhược điểm:}
+    \begin{itemize}[left=0.2cm]
+    \item[-]\textbf{Thiếu nhất quán:} NoSQL thường dựa trên mô hình "eventual \\consistency," có thể dẫn đến dữ liệu không chính xác hoặc lỗi thời.
+    
+    \item[-]\textbf{Thiếu chuẩn hóa:} Hiện chưa có chuẩn chung cho các hệ thống NoSQL, gây khó khăn cho việc chuyển đổi và tích hợp.
+    
+    \item[-]\textbf{Hỗ trợ phân tích hạn chế:} So với SQL, NoSQL kém hơn trong việc phân tích dữ liệu phức tạp.
+    
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Các ứng dụng phổ biến của NoSQL}
+\begin{enumerate}[left=1cm]
+    \item[] 
+    \begin{itemize}
+    \item [$\bullet$]\textbf{Dữ liệu lớn (Big Data):} Lưu trữ và xử lý khối lượng lớn dữ liệu từ nhiều nguồn khác nhau.
+    
+    \item [$\bullet$]\textbf{Mạng xã hội:} Quản lý và phân tích dữ liệu người dùng và các tương tác giữa họ.
+    
+    \item [$\bullet$]\textbf{Thương mại điện tử:} Quản lý thông tin sản phẩm, đơn hàng và dữ liệu khách hàng một cách linh hoạt.
+    \end{itemize}
+    
+
+\end{enumerate}
